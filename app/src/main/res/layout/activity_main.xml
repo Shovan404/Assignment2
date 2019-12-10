@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -19,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Area of circle"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
 
@@ -30,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Palindrome"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
 
@@ -41,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Automorphic"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
 
@@ -52,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Armstrong"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
 
@@ -63,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simple Interest"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
 
@@ -74,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Swap"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
 

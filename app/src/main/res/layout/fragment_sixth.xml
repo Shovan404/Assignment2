@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Swap the two given numbers"
+        android:background="@android:color/holo_red_light"
         android:textSize="34sp"/>
 
     <TextView

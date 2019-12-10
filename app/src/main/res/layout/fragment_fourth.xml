@@ -18,6 +18,7 @@
         android:id="@+id/btnArmstrong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
         android:text="Check if the number given is Armstrong"
         android:textSize="34sp"/>
 

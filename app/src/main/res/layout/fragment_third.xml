@@ -17,6 +17,7 @@
         android:id="@+id/btnAuto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
         android:text="Check if the number given is Automorphic"
         android:textSize="34sp"/>
 

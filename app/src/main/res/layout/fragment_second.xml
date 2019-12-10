@@ -18,6 +18,7 @@
         android:id="@+id/btnPalindrome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
         android:text="Check if the number given is palindrome"
         android:textSize="34sp"/>
 

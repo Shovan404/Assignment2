@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/holo_green_light"
+
     tools:context=".fragments.FirstFragment">
 
     <EditText
@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate the Area of circle"
+        android:background="@android:color/holo_orange_light"
         android:textSize="34sp"/>
 
     <TextView
