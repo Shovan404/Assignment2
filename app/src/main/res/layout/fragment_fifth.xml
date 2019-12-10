@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragments.FifthFragment">
+
+    <EditText
+        android:id="@+id/etPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the principal"
+        android:textSize="34sp"/>
+
+    <EditText
+        android:id="@+id/etRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the rate "
+        android:textSize="34sp"/>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the time"
+        android:textSize="34sp"/>
+
+
+
+    <Button
+        android:id="@+id/btnSimpleinterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate the Simple interet"
+        android:textSize="34sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"/>
+
+</LinearLayout>
