@@ -11,7 +11,7 @@
         android:id="@+id/etCircle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="calculate area of circle"
+        android:hint="Enter Radius"
         android:textSize="34sp"/>
 
     <Button
