@@ -8,13 +8,20 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.assignment2.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ThirdFragment extends Fragment {
+public class ThirdFragment extends Fragment implements View.OnClickListener {
+
+    private EditText etAuto;
+    private Button btnAuto;
+    private TextView tvAuto;
 
 
     public ThirdFragment() {
@@ -27,6 +34,30 @@ public class ThirdFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_third, container, false);
+        etAuto = view.findViewById(R.id.etAuto);
+        btnAuto = view.findViewById(R.id.btnAuto);
+        tvAuto = view.findViewById(R.id.tvAuto);
+
+        btnAuto.setOnClickListener(this);
+        return view;
     }
 
+    @Override
+    public void onClick(View v) {
+        int num = Integer.parseInt(etAuto.getText().toString());
+
+        int i,d=1;
+
+        for (i=num;i>0;i=i/10)
+        {
+            d=d*10;
+        }
+        if ((num*num)%d==num){
+            tvAuto.setText("Automorphic Number");
+        }
+        else {
+            tvAuto.setText("Not Automorphic");
+        }
+
+    }
 }

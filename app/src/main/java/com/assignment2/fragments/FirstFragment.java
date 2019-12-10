@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.assignment2.R;
@@ -19,8 +20,9 @@ import com.assignment2.R;
  */
 public class FirstFragment extends Fragment implements View.OnClickListener{
 
-    Button btnCircle;
-    EditText etCircle;
+    private Button btnCircle;
+    private EditText etCircle;
+    private TextView tvCircle;
 
     public FirstFragment() {
         // Required empty public constructor
@@ -35,6 +37,8 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
 
         etCircle=view.findViewById(R.id.etCircle);
         btnCircle=view.findViewById(R.id.btnCircle);
+        btnCircle.setOnClickListener(this);
+        tvCircle=view.findViewById(R.id.tvCircle);
         return view;
 
     }
@@ -44,7 +48,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
         float radius = Float.parseFloat(etCircle.getText().toString());
         float area = 3.14f*radius*radius;
 
-        Toast.makeText(getActivity(), "The area of cirlce is"+area, Toast.LENGTH_SHORT).show();
+        tvCircle.setText("The are of the circle is"+ area);
 
     }
 }

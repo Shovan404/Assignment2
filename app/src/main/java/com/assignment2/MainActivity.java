@@ -11,6 +11,9 @@ import android.widget.Button;
 
 import com.assignment2.fragments.FifthFragment;
 import com.assignment2.fragments.FirstFragment;
+import com.assignment2.fragments.FourthFragment;
+import com.assignment2.fragments.SecondFragment;
+import com.assignment2.fragments.SixthFragment;
 import com.assignment2.fragments.ThirdFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -50,8 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btnFragment2:
-                FifthFragment fifthFragment= new FifthFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,fifthFragment);
+                SecondFragment secondFragment= new SecondFragment();
+                fragmentTransaction.replace(R.id.fragmentContainer,secondFragment);
                 fragmentTransaction.commit();
                 break;
 
@@ -62,8 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btnFragment4:
-                FifthFragment fifthFragment= new FifthFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,fifthFragment);
+                FourthFragment fourthFragment= new FourthFragment();
+                fragmentTransaction.replace(R.id.fragmentContainer,fourthFragment);
                 fragmentTransaction.commit();
                 break;
 
@@ -74,8 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btnFragment6:
-                FifthFragment fifthFragment= new FifthFragment();
-                fragmentTransaction.replace(R.id.fragmentContainer,fifthFragment);
+                SixthFragment sixthFragment= new SixthFragment();
+                fragmentTransaction.replace(R.id.fragmentContainer,sixthFragment);
                 fragmentTransaction.commit();
                 break;
 

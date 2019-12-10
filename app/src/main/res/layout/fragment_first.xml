@@ -21,4 +21,10 @@
         android:text="Calculate the Area of circle"
         android:textSize="34sp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:id="@+id/tvCircle"/>
+
 </LinearLayout>

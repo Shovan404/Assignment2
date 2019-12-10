@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.assignment2.R;
@@ -19,8 +20,9 @@ import com.assignment2.R;
  */
 public class FifthFragment extends Fragment implements View.OnClickListener{
 
-    EditText etPrincipal, etRate, etTime;
-    Button btnSimpleinterest;
+    private EditText etPrincipal, etRate, etTime;
+    private Button btnSimpleinterest;
+    private TextView tvSimpleinterest;
 
 
     public FifthFragment() {
@@ -36,6 +38,7 @@ public class FifthFragment extends Fragment implements View.OnClickListener{
         etPrincipal=view.findViewById(R.id.etPrincipal);
         etRate=view.findViewById(R.id.etRate);
         etTime=view.findViewById(R.id.etTime);
+        tvSimpleinterest=view.findViewById(R.id.tvSimpleinterest);
         btnSimpleinterest=view.findViewById(R.id.btnSimpleinterest);
         btnSimpleinterest.setOnClickListener(this);
         return view;
@@ -48,6 +51,6 @@ public class FifthFragment extends Fragment implements View.OnClickListener{
         float Time = Float.parseFloat(etTime.getText().toString());
         float Simpleinterest = (Principal*Time*Rate)/100;
 
-        Toast.makeText(getActivity(), "The Simple interest is"+Simpleinterest, Toast.LENGTH_SHORT).show();
+        tvSimpleinterest.setText("Simple Interest: "+Simpleinterest);
     }
 }

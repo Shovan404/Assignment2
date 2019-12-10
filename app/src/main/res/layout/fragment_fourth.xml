@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
     tools:context=".fragments.FourthFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/etArmstrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter numbers"
+        android:textSize="34sp"/>
+
+    <Button
+        android:id="@+id/btnArmstrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check if the number given is Armstrong"
+        android:textSize="34sp"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:id="@+id/tvArmstrong"/>
 
-</FrameLayout>
+</LinearLayout>
